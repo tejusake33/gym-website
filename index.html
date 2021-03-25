@@ -1,0 +1,155 @@
+# gym-website
+this is created by tejashree sakhare
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>best gym</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #navbar {
+            display: flex;
+            align-items: center;
+        }
+
+        #logo {
+            margin: 2px 2px;
+        }
+
+        #navbar ul {
+            display: flex;
+        }
+
+        #navbar ul li {
+            list-style: none;
+        }
+
+        #navbar::before {
+            content: "";
+            display: flex;
+            background-color: black;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.5;
+        }
+
+        #navbar {
+            position: relative;
+        }
+
+        #navbar ul li a {
+            display: flex;
+            color: white;
+            padding: 10px 10px;
+            margin: 10px 10px;
+            text-decoration: none;
+        }
+
+        #navbar a:hover {
+            background-color: black;
+            border-radius: 5px;
+        }
+
+        #home {
+            display: flex;
+            flex-direction: column;
+            padding: 2px 200px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #home::before {
+            content: "";
+            display: flex;
+            background: url(https://images.unsplash.com/photo-1556817411-51d71c36cd87?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OXx8Z3ltJTIwcGhvdG9zfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60) no-repeat center center/cover;
+             position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.89;
+        }
+        #home h1{
+            color: white;
+            text-align: center;
+        }
+        #home p{
+            color: white;
+            text-align: center;
+            font-size: 10px;
+        }
+        .btn{
+            padding: 6px 20px;
+            border: 2px solid white;
+            background-color: rgb(59, 59, 228);
+            color: white;
+            margin: 17px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(3,1fr);
+            grid-row-gap:1rem;
+        }
+        .box{
+            color: white;
+            border: 2px solid black;
+            text-align: center;
+            background-image: url(https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8Z3ltJTIwcGhvdG9zfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60);
+            padding: 100px;
+        }
+        #logo{
+            padding: 2px 2px;
+            margin: 2px solid red;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="https://image.flaticon.com/icons/png/128/2112/2112184.png" alt="my gym">
+        </div>
+        <ul>
+            <li class="item"><a href="#">home</a></li>
+            <li class="item"><a href="#">about us</a></li>
+            <li class="item"><a href="#">services</a></li>
+            <li class="item"><a href="#">contact us</a></li>
+        </ul>
+    </nav>
+</body>
+<div class="container">
+    <div class="box">
+        <div id="logo">
+            <img src="https://image.flaticon.com/icons/png/128/3870/3870573.png" alt="">
+        </div>
+        <h1>our services</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, magni, obcaecati est dicta placeat voluptates ipsum fugiat cumque rerum nulla voluptatibus error odio mollitia voluptatem ex architecto earum ipsam labore, repellendus illo tempora? Provident.</p>
+    </div>
+    <div class="box">
+        <div id="logo">
+            <img src="https://image.flaticon.com/icons/png/128/561/561611.png" alt="">
+        </div>
+        <h1>diet plan</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia optio voluptate eos reiciendis consequatur blanditiis corrupti, error doloribus fuga pariatur quaerat necessitatibus tenetur! Aliquid aut architecto fuga at vitae, enim provident recusandae quae omnis.</p>
+    </div>
+    <div class="box">
+        <div id="logo">
+            <img src="https://image.flaticon.com/icons/png/128/3344/3344144.png" alt="">
+        </div>
+        <h1>personal trainers</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ducimus soluta, recusandae cupiditate error, nulla accusantium nisi, dolor animi vero vel eum fugit assumenda ut beatae consectetur quasi! Porro assumenda eius cumque unde architecto.</p>
+    </div>
+</div>
+</html>
